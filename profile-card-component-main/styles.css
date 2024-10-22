@@ -4,9 +4,12 @@
     padding: 0;
     font-size: 1.1rem;
 }
+body{
+    overflow: hidden;
+}
 
 .flex-container{
-    background-image:radial-gradient(circle at 20% 0%,hsl(185, 75%, 39%) , hsl(185, 94%, 64%),hsl(185, 75%, 39%));;
+    background-color: hsl(185, 75%, 39%);
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -22,10 +25,12 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    z-index: 102;
 }
 
 #photo-section{
-    background-color: hsl(185, 93%, 62%);
+    /* background-color: hsl(185, 93%, 62%); */
+    background-image: url("images/bg-pattern-card.svg");
     height: 8rem;
     border-radius: 10% 10% 0 0;
     text-align: center;
@@ -62,5 +67,29 @@
     text-align: center;
 }
 
+.bg-top {
+    position: absolute;
+    top:-70%;
+    left: -30%;
+    z-index: 101;
+  }
+  .bg-bottom {
+    bottom: -80%;
+    position: absolute;
+    right: -20%;
+    z-index: 101;
+    overflow: hidden;
+  }
+
+  .attribution {
+    position: absolute;
+    font-size: 1em;
+    text-align: center;
+    left: 35%;
+    bottom: 0;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
 
 
