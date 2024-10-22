@@ -1,0 +1,75 @@
+*{
+    font-family: "Kumbh Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+
+.flex-container{
+    background-image:radial-gradient(circle at 20% 0%,hsl(185, 75%, 39%) , hsl(185, 94%, 64%),hsl(185, 75%, 39%));;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    width: 21rem;
+    height:23rem ;
+    background-color: rgb(249, 249, 250);
+    border-radius: 8%;
+    box-shadow: 0 5px 10px rgb(0, 0, 0,0.5);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#photo-section{
+    background-color: hsl(185, 93%, 62%);
+    /* background-image: radial-gradient(circle at 10% 20%,hsl(185, 75%, 39%)30% , hsl(185, 90%, 47%),hsl(185, 75%, 39%)); */
+      /* background-image: radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 70%),
+                        radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 70%),
+                        radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 70%),
+                        radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 70%); */
+
+    height: 8rem;
+    border-radius: 10% 10% 0 0;
+    text-align: center;
+}
+
+#photo-section > img{
+    position: absolute;
+    top: 5rem;
+    left: 7.5rem;
+    border-radius: 50%;
+    border: 0.3rem solid white;
+}
+#mid-section{
+    height: 9rem;
+    border-bottom: 0.01rem solid hsl(0, 0%, 59%);
+    text-align: center;
+}
+
+#mid-section-content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 4rem auto 0 auto;
+}
+
+#follower-section{
+    margin-top: 2rem;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* height:100% */
+}
+#follower-section div{
+    display: inline-block;
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+
